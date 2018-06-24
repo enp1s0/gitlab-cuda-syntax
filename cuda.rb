@@ -8,21 +8,21 @@ module Rouge
       title "CUDA"
       desc "The CUDA/C++ programming language"
 
-      tag 'cpp'
-      aliases 'c++'
+      tag 'cuda'
+      aliases 'cuda'
       # the many varied filenames of c++ source files...
       filenames '*.cu', '*.cuh'
       mimetypes 'text/x-cuhdr', 'text/x-cusrc'
 
       def self.keywords
         @keywords ||= super + Set.new(%w(
-                        threadIdx blockIdx blockDim dim3
+                        threadIdx blockIdx blockDim
         ))
       end
 
       def self.keywords_type
         @keywords_type ||= super + Set.new(%w(
-          bool
+                        half half__ half2 half2__ dim3
         ))
       end
 
