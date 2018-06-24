@@ -16,19 +16,19 @@ module Rouge
 
       def self.keywords
         @keywords ||= super + Set.new(%w(
-                        threadIdx blockIdx blockDim
+			threadIdx blockIdx blockDim
         ))
       end
 
       def self.keywords_type
         @keywords_type ||= super + Set.new(%w(
-                        half half__ half2 half2__ dim3
+			half half__ half2 half2__ dim3
         ))
       end
 
       def self.reserved
         @reserved ||= super + Set.new(%w(
-                        __global__ __shared__ __device__
+			__global__ __host__ __device__ __constant__  __shared__
         ))
       end
 

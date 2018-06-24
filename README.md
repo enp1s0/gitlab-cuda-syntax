@@ -16,3 +16,19 @@ find / -name lexers -type d 2>/dev/null | grep gitlab
 cp cuda.rb /path/to/gitlab/rouge/lexers/
 ```
 
+## Added keywords
+
+- keywords
+```
+blockIdx blockDim threadIdx
+```
+
+- types
+```
+half half__ half2 half2__ dim3
+```
+
+- reserved
+```
+__global__ __host__ __device__ __constant__  __shared__
+```
