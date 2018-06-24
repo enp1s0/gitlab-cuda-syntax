@@ -6,11 +6,13 @@ https://docs.gitlab.com/ee/user/project/highlighting.html
 
 ## How to install
 
+### Find GitLab Rouge lexers path
 ```
-cp cuda.rb /path/to/gitlab/embedded/lib/ruby/gems/*.*.*/gems/rouge-*.*.*/lib/rouge/lexers
+find / -name lexers -type d 2>/dev/null | grep gitlab
 ```
 
-### Find GitLab path
+### Copy cuda.rb
 ```
-find / -name cpp.rb 2>/dev/null | grep gitlab
+cp cuda.rb /path/to/gitlab/rouge/lexers/
 ```
+
