@@ -5,8 +5,12 @@
 https://docs.gitlab.com/ee/user/project/highlighting.html
 
 ## How to install
+
 ```
-cp cuda.rb /opt/gitlab/embedded/lib/ruby/gems/*.*.*/gems/rouge-*.*.*/lib/rouge/lexers
+cp cuda.rb /path/to/gitlab/embedded/lib/ruby/gems/*.*.*/gems/rouge-*.*.*/lib/rouge/lexers
 ```
 
-
+### Find GitLab path
+```
+find / -name cpp.rb 2>/dev/null | grep gitlab
+```
