@@ -6,17 +6,17 @@ https://docs.gitlab.com/ee/user/project/highlighting.html
 
 ## How to install
 
-### Find GitLab Rouge lexers path
+1. Find GitLab Rouge lexers path
 ```
 find / -name lexers -type d 2>/dev/null | grep gitlab
 ```
 
-### Copy cuda.rb
+2. Copy cuda.rb
 ```
 cp cuda.rb /path/to/gitlab/rouge/lexers/
 ```
 
-### Restart GitLab
+3. Restart GitLab
 ```
 gitlab-ctl restart
 ```
