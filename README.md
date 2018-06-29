@@ -16,6 +16,12 @@ find / -name lexers -type d 2>/dev/null | grep gitlab
 cp cuda.rb /path/to/gitlab/rouge/lexers/
 ```
 
+### Restart GitLab
+```
+gitlab-ctl restart
+```
+
+
 ## Added keywords
 
 - keywords
