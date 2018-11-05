@@ -50,3 +50,7 @@ double1 double2 double3 double4
 ```cuda
 __global__ __host__ __device__ __constant__  __shared__
 ```
+
+
+## Reference
+- https://docs.nvidia.com/cuda/cuda-c-programming-guide/#built-in-vector-types
