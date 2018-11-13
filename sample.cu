@@ -1,5 +1,6 @@
 
 __device__ half dev_square(half in){
+	float4 f4 = make_float4(0.0f, 1.0f, 2.0f, 3.0f);
 	return in * in;
 }
 
