@@ -4,6 +4,9 @@
 
 https://docs.gitlab.com/ee/user/project/highlighting.html
 
+## Sample
+[GitLab CUDA Sample](https://gitlab.momo86.net/mutsuki/gitlab-cuda/blob/master/sample.cu)
+
 ## How to install
 
 1. Find GitLab Rouge lexers path
